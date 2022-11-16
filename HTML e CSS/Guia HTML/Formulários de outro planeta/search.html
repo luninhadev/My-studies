@@ -1,0 +1,31 @@
+<!--
+    <input type="search"/>
+
+    - Para campos de busca
+    - É igual ao campo do tipo 'text' mas poderá ser um pouco diferente dependendo do user agent
+
+    # Atributos
+
+    - list / <datalist>
+    - pattern
+    - aria-label
+-->
+
+<datalist id="searchterms">
+    <option>Mac</option>
+    <option>Win</option>
+    <option>Linux</option>
+</datalist>
+
+<form action="">
+    
+    <input
+        type="search"
+        name="q"
+        list="searchterms"
+        placeholder="Digite seu campo de busca"
+        size="29"
+        aria-label="Campo de pesquisa: Digite seu termo de busca"
+    >
+    <button>Search</button>
+</form>

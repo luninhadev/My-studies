@@ -1,0 +1,60 @@
+<!--
+    <fieldset>
+
+    - agrupamento de campos
+    - mesmo propósito
+    - semântico
+    - acessibilidade
+
+    Atributos especiais
+    - disabled
+        - desabilita todos os elementos internos
+        - não serão enviados ao submeter o formulário
+    - form
+        - o id de um formulário ao qual esse fieldset pertence
+        - não precisa estar dentro do formulário
+    - name
+        - nome do grupo
+    <Legend>
+    - nome do agrupamento
+    - primeiro elemento dentro do fieldset
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <!-- o form precisa do id para poder se linkar com o fieldset -->
+    <form id="contato" action="">
+        <button>Enviar</button>
+    </form>
+
+    <!-- Quando fieldset estiver fora do form ele precisará ter o form linkando ele ao formulário -->
+    <fieldset form="contato" name="inputs-contact">
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+
+    <!-- Aqui o fieldset está dentro do form -->
+
+    <form action="">
+        <fieldset name="inputs-contact">
+            <legend>Contato</legend>
+        
+            <label for="">Nome</label>
+            <input type="text">
+            <button>Enviar</button>
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>

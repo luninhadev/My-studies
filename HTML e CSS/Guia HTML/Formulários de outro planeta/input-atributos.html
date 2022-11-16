@@ -1,0 +1,26 @@
+<!--
+
+    <input> Atributos comuns
+    - autocomplete
+    - autofocus
+    - disabled
+    - readonly (quase todos)
+    - value
+    - form (quase todos)
+    - name
+    - required (quase todos)
+    - placeholder (quase todos)
+-->
+<div>
+    <h2>Com valor e desabilitado</h2>
+    <input type="text" value="Um valor" disabled>
+    <h2>Com valor e somente leitura</h2>
+    <input type="text" value="Um valor" readonly>
+    <h2>Com campo obrigatório</h2>
+    <input type="type" required>
+    <h2>Com placeholder</h2>
+    <input type="password" placeholder="Digite sua senha" >
+</div>
+<h2>Input linkado com o formulário</h2>
+<form id="meu-form"></form>
+<input name="email" type="email" form="meu-form">
