@@ -1,6 +1,5 @@
-# My studies
+# My studies, a guide with examples
 
-# A guide with examples
 * HTML
 * CSS
 * Javascript
