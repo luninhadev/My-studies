@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var é global e, também local
+        // hoisting do inglês elevação que traz o var pra cima
+        console.log('> existe x antes do bloco? ', x)
+        
+        {
+            var x = 0 // o js faz uma leitura top-down do seu código, então pq desta maneira ele resulta em undefined? pq por de baixo dos panos ele pega esse var e joga para o início do programa sem atribuir valor
+        }
+
+        console.log('> existe x depois do bloco? ', x)
+
+        // const e let são locais e só funcionam no escopo onde foi criada
+        console.log('> existe y antes do bloco? ', y)
+
+        {
+            let y = 0 // erro Uncaught ReferenceError: y is not defined at scope.html:22:52
+        }
+
+        console.log('> exixte y depois do bloco? ', y) 
+    </script>
+</body>
+</html>
